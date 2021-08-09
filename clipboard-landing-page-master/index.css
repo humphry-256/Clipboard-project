@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap");
+* {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  color: hsl(201, 11%, 66%);
+  font-family: Bai Jamjuree, "Segoe UI", sans-serif;
+}
+#page_intro,
+#snippets,
+#clipboard,
+#workflow,
+.workflow_opt,
+#lower_btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#buttons,
+#options_list,
+#workflow_options,
+#company_logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#options_list {
+  width: 90vw;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+#snippet_list {
+  height: 500px;
+  width: 40%;
+}
+#snippet_list > .options1 {
+  width: 80%;
+  padding: 20px;
+}
+#snippet_list > .options1 > p {
+  text-align: left;
+}
+#links {
+  display: grid;
+  width: 700px;
+  margin-top: 10px;
+  padding: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+#links li {
+  list-style-type: none;
+  margin-bottom: 5px;
+}
+#links li a {
+  text-decoration: none;
+  color: hsl(210, 10%, 33%);
+}
+#links li a:hover {
+  cursor: pointer;
+  color: hsl(171, 66%, 44%);
+}
+#socials {
+  margin-right: 30px;
+  margin-top: 30px;
+}
+#socials ul li {
+  display: inline;
+  list-style-type: none;
+}
+#socials li a {
+  margin-left: 15px;
+}
+header {
+  background-image: url("images/bg-header-desktop.png");
+}
+input[type="button"] {
+  height: 40px;
+  width: 150px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  font-family: Bai Jamjuree, "Segoe UI", sans-serif;
+}
+input[type="button"]:hover {
+  cursor: pointer;
+}
+#buttons {
+  margin-top: 30px;
+  width: 350px;
+  justify-content: space-between;
+}
+.ios {
+  background-color: hsl(171, 66%, 44%);
+  box-shadow: 1px 2px 3px hsl(171, 66%, 44%);
+}
+.mac {
+  background-color: hsl(233, 100%, 69%);
+  box-shadow: 1px 2px 3px hsl(233, 100%, 69%);
+}
+#logo {
+  transform: scale(0.7);
+}
+#page_intro h1 {
+  text-align: center;
+  width: 90%;
+}
+#page_intro,
+#snippets,
+#clipboard,
+#lower_btns {
+  width: 40vw;
+  margin: Auto;
+  margin-bottom: 5rem;
+}
+#page_intro p,
+#snippets p,
+#clipboard p,
+#workflow p,
+#lower_btns p {
+  width: 75%;
+  margin-top: 20px;
+  text-align: center;
+}
+#other_devices_img {
+  margin-top: 50px;
+}
+h1,
+h3,
+h4,
+h5 {
+  color: hsl(210, 10%, 33%);
+}
+#workflow_options {
+  margin-top: 50px;
+  width: 70%;
+}
+#workflow_options > .workflow_opt {
+  width: 30%;
+  height: 250px;
+}
+.workflow_opt > h3 {
+  margin-top: 30px;
+}
+#company_logos {
+  width: 90%;
+  height: 250px;
+  margin: auto;
+  justify-content: space-evenly;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+  margin: auto;
+  background-color: hsl(240, 1%, 83%);
+}
+footer > img {
+  transform: scale(0.4);
+}
+@media screen and (max-width: 700px) {
+  #page_intro {
+    flex-direction: column;
+    width: 90vw;
+  }
+  #buttons {
+    flex-direction: column;
+    height: 100px;
+  }
+  input[type="button"] {
+    width: 100%;
+  }
+  #snippets {
+    flex-direction: column;
+    width: 90vw;
+  }
+  #desktop_img {
+    transform: scale(0.55);
+  }
+  #options_list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+  #snippet_list {
+    width: 90vw;
+  }
+  .options1 {
+    text-align: center;
+  }
+  #snippet_list > .options1 > p {
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+  }
+  #clipboard {
+    width: 90vw;
+    text-align: center;
+  }
+  #other_devices_img {
+    transform: scale(0.5);
+  }
+  #workflow {
+    width: 90vw;
+    text-align: center;
+    margin: auto;
+  }
+  #workflow_options {
+    width: 90vw;
+    flex-direction: column;
+  }
+  #workflow_options > .workflow_opt {
+    width: 100%;
+  }
+  #company_logos {
+    flex-direction: column;
+    height: 500px;
+  }
+  #lower_btns {
+    width: 90vw;
+    text-align: center;
+  }
+  footer {
+    flex-direction: column;
+    outline: auto;
+    margin: auto;
+  }
+  #links {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    outline: auto;
+  }
+  footer > img {
+    transform: scale(0.1);
+  }
+  #socials {
+    outline: auto;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+}
