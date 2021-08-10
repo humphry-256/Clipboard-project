@@ -76,8 +76,12 @@ body {
 #socials li a {
   margin-left: 15px;
 }
-header {
+header{
   background-image: url("images/bg-header-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 8%;
+
 }
 input[type="button"] {
   height: 40px;
@@ -158,12 +162,12 @@ footer {
   justify-content: space-between;
   width: 90vw;
   margin: auto;
-  background-color: hsl(240, 1%, 83%);
+  background-color: hsla(0, 8%, 88%, 0.329);
 }
 footer > img {
   transform: scale(0.4);
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   #page_intro {
     flex-direction: column;
     width: 90vw;
@@ -227,26 +231,21 @@ footer > img {
     text-align: center;
   }
   footer {
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    outline: auto;
     margin: auto;
   }
   #links {
     display: flex;
     width: 90%;
-    margin: auto;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    outline: auto;
   }
-  footer > img {
-    transform: scale(0.1);
-  }
+
   #socials {
-    outline: auto;
     display: flex;
     justify-content: center;
-    margin: auto;
   }
 }
