@@ -250,10 +250,10 @@ footer > img {
 }
 @media screen and (max-width: 400px) {
   input[type="button"] {
-    width: 100%;
+    width: 90%;
   }
   #other_devices_img {
-    transform: scale(0.3);
+    transform: scale(0.35);
   }
   #desktop_img {
     transform: scale(0.35);
