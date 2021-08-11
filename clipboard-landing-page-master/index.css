@@ -76,12 +76,11 @@ body {
 #socials li a {
   margin-left: 15px;
 }
-header{
+header {
   background-image: url("images/bg-header-desktop.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 8%;
-
 }
 input[type="button"] {
   height: 40px;
@@ -247,5 +246,16 @@ footer > img {
   #socials {
     display: flex;
     justify-content: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  input[type="button"] {
+    width: 100%;
+  }
+  #other_devices_img {
+    transform: scale(0.3);
+  }
+  #desktop_img {
+    transform: scale(0.35);
   }
 }
